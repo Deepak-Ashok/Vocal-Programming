@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Speech Programmer</title>
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+
+  <body>
+
+    <div class="half-screen left">
+      <h1>Vocal Programming Tool</h1>
+
+      <div class="instructions">
+        <p>Welcome to Vocal Programming Tool. Vocal Programming Tool is your voice code typist. All you have to do is speak out the code, and the app will write it for you!</p>
+        <p>Vocal Programming Tool has certain syntax rules, and only responds to specific voice commands. Make sure you take a look at the <a href="./readme.html" target="_blank">readme</a> document before you get started.</p>
+        <p>To start speaking code, hit the start button below...</p>
+      </div>
+
+      <div class="btn-container">
+          <button class="btn start" id="start_stop_button" onclick="startStopButton(event)">
+            Start
+          </button>
+          <button class="btn clear" id="clearButton" onclick="clearCode(event)">
+            Clear Code
+          </button>
+          <a class="btn readme" href='./readme.html' target="_blank">Readme</a>
+          <button class="btn" id="changeThemeButton" onClick="changeTheme(event)">
+            Change Theme
+          </button>
+      </div>
+
+      <div class="contributing">
+        <h2>About</h2>
+        <p>Vocal Programming Tool is a especially for visually impaired and people with upper body impairment to facilitate to learn programming concepts.</p>
+        <p>Our aim is to encourage people in coding, by teaching programming concepts and empower them to achieve the best future by giving programming theories simply with coding examples</p>
+        <p>Developed by: Adnan , Charith , Deepak , Deepanshu </p>
+        <p> under the guidance of Prof Abhinav R B</p>
+      </div>
+    </div>
+
+
+    <div class="half-screen right full-height" id="text-editor-container">
+        <!-- Monaco Text Editor Here -->
+    </div>
+
+    <script src="js/voicerecog.js"></script>
+    <script src="js/functionCalls.js"></script>
+    <script src="js/buttonFunctions.js"></script>
+    <script src="js/utilFunctions.js"></script>
+    <script src="js/includeLibraries.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/iofunctions.js"></script>
+    <script src="js/ifelse.js"></script>
+    <script src = 'js/loops.js'></script>
+    <script src="js/braces.js"></script>
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+    <script src="js/monacoEditor.js"></script>
+
+  </body>
+</html>
